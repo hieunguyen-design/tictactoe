@@ -1,33 +1,97 @@
-@import "tailwindcss";
+:root {
+  --color-1: #f2f2f2;
+  --color-2: #bfbfbf;
+  --color-3: #737373;
+  --color-4: #404040;
+  --color-5: #0d0d0d;
+  --color-red: #ff523f;
+  --color-blue: #378cfa;
+}
+
+/* Color Theme Swatches in Hex */
+.Graphic-Design-1-hex {
+  color: var(--color-1);
+}
+.Graphic-Design-2-hex {
+  color: var(--color-2);
+}
+.Graphic-Design-3-hex {
+  color: var(--color-3);
+}
+.Graphic-Design-4-hex {
+  color: var(--color-4);
+}
+.Graphic-Design-5-hex {
+  color: var(--color-5);
+}
+.Color-Red {
+  color: var(--color-red);
+}
+.Color-Blue {
+  color: var(--color-blue);
+}
 * {
   margin: 0;
   padding: 0;
 }
 body {
-  background-color: #404040;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-5);
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  color: var(--color-1);
 }
-/* Color Theme Swatches in Hex */
-.Graphic-Design-1-hex {
-  color: #f2f2f2;
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
 }
-.Graphic-Design-2-hex {
-  color: #bfbfbf;
+.title {
+  font-size: 72px;
 }
-.Graphic-Design-3-hex {
-  color: #737373;
+.players-name {
+  font-size: 28px;
+  display: flex;
+  gap: 50px;
 }
-.Graphic-Design-4-hex {
-  color: #404040;
+.gameboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 15px;
+  border-radius: 20px;
+  background-color: var(--color-4);
+  padding: 10px;
 }
-.Graphic-Design-5-hex {
-  color: #0d0d0d;
+.gameboard div {
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  background-color: var(--color-2);
+  font-size: 24px;
+  font-size: 150px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.Color-Red {
-  color: #e51700;
+.actions {
+  display: flex;
+  gap: 50px;
 }
-.Color-Blue {
-  color: #0064e6;
+.actions button {
+  width: 75px;
+  height: 75px;
+  border-radius: 50px;
+  background-color: var(--color-4);
+}
+.actions button i {
+  color: var(--color-1);
 }

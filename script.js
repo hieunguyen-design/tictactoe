@@ -19,6 +19,10 @@ const GameBoard = (function () {
     return emptyCounter;
   }
 
+  function isFull() {
+    return countEmptySlot() === 0 ? true : false;
+  }
+
   function countPlayer() {
     let playerCounter = 0;
     for (let i = 0; i < players.length; i++) {
@@ -64,6 +68,7 @@ const GameBoard = (function () {
     showGameBoard,
     showPlayers,
     countEmptySlot,
+    isFull,
     countPlayer,
     reset,
     addPlayer,
@@ -72,6 +77,7 @@ const GameBoard = (function () {
   };
 })();
 
+// CONSOlE TESTING
 console.log(GameBoard.countEmptySlot());
 console.log(GameBoard.countPlayer());
 console.log(GameBoard.addPlayer("Hieu", "X"));
@@ -89,3 +95,5 @@ GameBoard.makeStep(7, GameBoard.getPlayer(1));
 console.log(GameBoard.showGameBoard());
 GameBoard.reset();
 console.log(GameBoard.showGameBoard());
+
+//
