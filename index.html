@@ -14,29 +14,56 @@
     <div class="container Graphic-Design-1-hex">
       <h1 class="title">TIC TAC TOE</h1>
       <div class="players-name">
-        <h3 class="Color-Red">Player 1</h3>
-        <h3 class="Color-Blue">Player 2</h3>
+        <h3 class="Color-Red player1NameShowed">Player 1</h3>
+        <h3 class="Color-Blue player2NameShowed">Player 2</h3>
       </div>
+
       <div class="gameboard">
-        <div class="1"></div>
-        <div class="2"></div>
-        <div class="3"></div>
-        <div class="4"></div>
-        <div class="5"></div>
-        <div class="6"></div>
-        <div class="7"></div>
-        <div class="8"></div>
-        <div class="9"></div>
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+        <div class="box-4"></div>
+        <div class="box-5"></div>
+        <div class="box-6"></div>
+        <div class="box-7"></div>
+        <div class="box-8"></div>
+        <div class="box-9"></div>
       </div>
+      <dialog class="edit-modal">
+        <div class="edit-dialog">
+          <h2>Edit Player Name</h2>
+          <label for="inputName" name="player1Name" class="Color-Red">
+            Player 1
+          </label>
+          <input type="text" name="player1Name" id="player1Name" />
+          <label for="inputName" name="player2Name" class="Color-Blue"
+            >Player 2
+          </label>
+          <input type="text" name="player2Name" id="player2Name" />
+          <div>
+            <button id="save">Save</button>
+            <button id="cancel">Cancel</button>
+          </div>
+        </div>
+      </dialog>
+      <dialog class="winnerAnnouce">
+        <div class="winnerAnnouce-content">
+          <h1>Winner</h1>
+          <h3 id="winnerName"></h3>
+          <button title="Play Again">
+            <i class="again fa-solid fa-2xl fa-arrow-rotate-left"></i>
+          </button>
+        </div>
+      </dialog>
       <div class="actions">
         <button title="Edit Name">
-          <i class="fa-solid fa-2xl fa-pen-to-square"></i>
+          <i class="edit fa-solid fa-2xl fa-pen-to-square"></i>
         </button>
-        <button title="Reverse">
-          <i class="fa-solid fa-2xl fa-backward"></i>
-        </button>
+        <!-- <button title="Reverse">
+          <i class="reverse fa-solid fa-2xl fa-backward"></i>
+        </button> -->
         <button title="Play Again">
-          <i class="fa-solid fa-2xl fa-arrow-rotate-left"></i>
+          <i class="again fa-solid fa-2xl fa-arrow-rotate-left"></i>
         </button>
       </div>
     </div>

@@ -95,3 +95,65 @@ body {
 .actions button i {
   color: var(--color-1);
 }
+dialog {
+  padding: 50px;
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-1);
+  border: 0;
+  box-shadow: 10px 10px var(--color-5);
+}
+dialog::backdrop {
+  background-color: black;
+  opacity: 80%;
+}
+.edit-dialog {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+dialog input {
+  width: 100%;
+  border-radius: 5px;
+  height: 50px;
+  font-size: 24px;
+}
+dialog label {
+  font-size: 24px;
+  font-weight: 700;
+}
+dialog div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding-top: 15px;
+}
+dialog div button {
+  width: 74px;
+  height: 32px;
+  border-radius: 15px;
+  background-color: var(--color-3);
+  color: var(--color-1);
+}
+.winnerAnnouce-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.winnerAnnouce h3 {
+  font-size: 72px;
+}
+.winnerAnnouce button {
+  width: 75px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: var(--color-4);
+}
