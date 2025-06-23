@@ -252,8 +252,8 @@ playAgain.forEach((button) => {
       element.classList.remove("Color-Blue");
     });
     GamePlay.reset();
+    winnerAnnounce.close();
     winnerName.classList.remove("Color-Red");
     winnerName.classList.remove("Color-Blue");
-    winnerAnnounce.close();
   });
 });
