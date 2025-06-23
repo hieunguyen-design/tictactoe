@@ -26,26 +26,18 @@ A browser-based Tic Tac Toe game built with HTML, CSS, and JavaScript. This proj
 | ------------------------------------------ | -------------------------------------------- |
 | ![Game Screenshot](./screenshots/game.png) | ![Modal Screenshot](./screenshots/modal.png) |
 
-> _Make sure to add screenshots in the `screenshots/` folder._
-
 ## 🧠 Key Concepts
 
 - **Module Pattern** with IIFE (`GameBoard`, `Players`, `GamePlay`)
 - **DOM manipulation** with `querySelector` and `addEventListener`
 - **Game state management** using arrays and objects
 
-## 🗂️ File Structure
-
-tic-tac-toe/
-│
-├── index.html # HTML structure
-├── styles.css # Game styling
-├── scripts.js # Game logic and modular pattern
-├── README.md # Project documentation
-└── /screenshots # Game screenshots
-
 ## 📌 Future Improvements
 
 - Add AI opponent (easy/medium mode)
 - Store game results in localStorage
 - Add animations and sound effects
+
+## 🙏 Credits
+
+Project inspired and guided by The Odin Project.
